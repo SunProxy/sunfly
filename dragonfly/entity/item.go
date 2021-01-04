@@ -21,6 +21,8 @@ type Item struct {
 	i                item.Stack
 	velocity, pos    atomic.Value
 
+	nameTag atomic.Value
+
 	*MovementComputer
 }
 
@@ -189,11 +191,6 @@ func (it *Item) AABB() physics.AABB {
 	return physics.NewAABB(mgl64.Vec3{-0.125, 0, -0.125}, mgl64.Vec3{0.125, 0.25, 0.125})
 }
 
-// State ...
-func (it *Item) State() []state.State {
-	return nil
-}
-
 // EncodeEntity ...
 func (it *Item) EncodeEntity() string {
 	return "minecraft:item"
@@ -205,4 +202,30 @@ func (it *Item) Close() error {
 		it.World().RemoveEntity(it)
 	}
 	return nil
+}
+
+// updateState updates the state of the item entity to all viewers of the player.
+func (it *Item) updateState() {
+	for _, v := range it.World().Viewers(it.Position()) {
+		v.ViewEntityState(it, it.State())
+	}
+}
+
+//Returns the item entities said nametag
+func (it *Item) NameTag() string {
+	return it.nameTag.Load().(string)
+}
+
+//Sets the item entities said name tag
+func (it *Item) SetNameTag(nameTag string) {
+	it.nameTag.Store(nameTag)
+	it.updateState()
+}
+
+//State ...
+func (it *Item) State() (s []state.State) {
+	if it.nameTag.Load().(string) != "" {
+		s = append(s, state.Named{NameTag: it.nameTag.Load().(string)})
+	}
+	return
 }
