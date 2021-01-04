@@ -140,9 +140,6 @@ func (it *Item) merge(other *Item) bool {
 	a, b := other.i.AddStack(it.i)
 
 	newA := NewItem(a, other.Position())
-	if it.nameTag.Load().(string) != "" {
-		newA.SetNameTag(it.nameTag.Load().(string))
-	}
 	newA.SetVelocity(other.Velocity())
 	ctx := event.C()
 	it.Handler().HandleItemMerge(ctx, it, newA)
@@ -152,9 +149,6 @@ func (it *Item) merge(other *Item) bool {
 
 	if !b.Empty() {
 		newB := NewItem(b, it.Position())
-		if it.nameTag.Load().(string) != "" {
-			newB.SetNameTag(it.nameTag.Load().(string))
-		}
 		newB.SetVelocity(it.Velocity())
 		ctx := event.C()
 		it.Handler().HandleItemMerge(ctx, it, newB)
