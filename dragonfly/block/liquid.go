@@ -1,10 +1,10 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/event"
-	"github.com/df-mc/dragonfly/dragonfly/internal/block_internal"
-	"github.com/df-mc/dragonfly/dragonfly/internal/world_internal"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/event"
+	"github.com/sunproxy/sunfly/dragonfly/internal/block_internal"
+	"github.com/sunproxy/sunfly/dragonfly/internal/world_internal"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"math"
 	"sync"
 )

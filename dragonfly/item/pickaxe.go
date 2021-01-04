@@ -1,8 +1,8 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Pickaxe is a tool generally used for mining stone-like blocks and ores at a higher speed and to obtain

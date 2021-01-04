@@ -2,8 +2,8 @@ package inventory
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/internal/item_internal"
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/internal/item_internal"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 )
 
 // Armour represents an inventory for armour. It has 4 slots, one for a helmet, chestplate, leggings and

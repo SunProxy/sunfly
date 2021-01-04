@@ -1,12 +1,12 @@
 package world
 
 import (
-	blockAction "github.com/df-mc/dragonfly/dragonfly/block/action"
-	"github.com/df-mc/dragonfly/dragonfly/entity/action"
-	"github.com/df-mc/dragonfly/dragonfly/entity/state"
-	"github.com/df-mc/dragonfly/dragonfly/world/chunk"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/google/uuid"
+	blockAction "github.com/sunproxy/sunfly/dragonfly/block/action"
+	"github.com/sunproxy/sunfly/dragonfly/entity/action"
+	"github.com/sunproxy/sunfly/dragonfly/entity/state"
+	"github.com/sunproxy/sunfly/dragonfly/world/chunk"
 )
 
 // Viewer is a viewer in the world. It can view changes that are made in the world, such as the addition of

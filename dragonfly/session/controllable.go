@@ -1,13 +1,13 @@
 package session
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/player/form"
-	"github.com/df-mc/dragonfly/dragonfly/player/skin"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/gamemode"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/google/uuid"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/player/form"
+	"github.com/sunproxy/sunfly/dragonfly/player/skin"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/gamemode"
 )
 
 // Controllable represents an entity that may be controlled by a Session. Generally, a Controllable is

@@ -1,12 +1,12 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/colour"
-	"github.com/df-mc/dragonfly/dragonfly/block/fire"
-	"github.com/df-mc/dragonfly/dragonfly/block/wood"
-	"github.com/df-mc/dragonfly/dragonfly/internal/entity_internal"
-	"github.com/df-mc/dragonfly/dragonfly/internal/item_internal"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/block/colour"
+	"github.com/sunproxy/sunfly/dragonfly/block/fire"
+	"github.com/sunproxy/sunfly/dragonfly/block/wood"
+	"github.com/sunproxy/sunfly/dragonfly/internal/entity_internal"
+	"github.com/sunproxy/sunfly/dragonfly/internal/item_internal"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	_ "unsafe" // Imported for compiler directives.
 )
 

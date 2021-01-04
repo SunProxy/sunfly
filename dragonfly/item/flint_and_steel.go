@@ -1,10 +1,10 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/internal/item_internal"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/internal/item_internal"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 	"math/rand"
 	"time"
 )

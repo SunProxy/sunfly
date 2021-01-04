@@ -1,7 +1,7 @@
 package world
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
 )
 
 // BlockModel represents the model of a block. These models specify the ways a block can be collided with and

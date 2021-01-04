@@ -1,11 +1,11 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/internal/item_internal"
-	"github.com/df-mc/dragonfly/dragonfly/item/bucket"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/internal/item_internal"
+	"github.com/sunproxy/sunfly/dragonfly/item/bucket"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 )
 
 // Bucket is a tool used to carry water, lava, milk and fish.

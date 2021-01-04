@@ -1,7 +1,7 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Crop is an interface for all crops that are grown on farmland. A crop has a random chance to grow during random ticks.

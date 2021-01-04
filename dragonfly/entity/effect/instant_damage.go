@@ -1,8 +1,8 @@
 package effect
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/damage"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/entity/damage"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"time"
 )
 

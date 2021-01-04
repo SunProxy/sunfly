@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Solid is the model of a fully solid block. Blocks with this model, such as stone or wooden planks, have a

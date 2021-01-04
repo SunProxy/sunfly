@@ -3,10 +3,10 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly"
-	"github.com/df-mc/dragonfly/dragonfly/player/chat"
 	"github.com/pelletier/go-toml"
 	"github.com/sirupsen/logrus"
+	"github.com/sunproxy/sunfly/dragonfly"
+	"github.com/sunproxy/sunfly/dragonfly/player/chat"
 	"io/ioutil"
 	"os"
 	"os/exec"

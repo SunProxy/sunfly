@@ -1,10 +1,10 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/colour"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/colour"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // GlazedTerracotta is a vibrant solid block that comes in the 16 regular dye colours.

@@ -1,8 +1,8 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Sand is a block affected by gravity. It can come in a red variant.

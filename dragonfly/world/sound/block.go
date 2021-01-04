@@ -1,9 +1,9 @@
 package sound
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/instrument"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/instrument"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // BlockPlace is a sound sent when a block is placed.

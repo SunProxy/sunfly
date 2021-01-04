@@ -1,6 +1,6 @@
 package block
 
-import "github.com/df-mc/dragonfly/dragonfly/world"
+import "github.com/sunproxy/sunfly/dragonfly/world"
 
 // Light is an invisible block that can produce any light level.
 type Light struct {

@@ -4,24 +4,24 @@ package block_internal
 //lint:file-ignore ST1020 Exported functions in this package have compiler directives. These functions are not otherwise exposed to users.
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/particle"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/particle"
 	_ "unsafe" // Imported for compiler directives.
 )
 
-//go:linkname world_blocksByName github.com/df-mc/dragonfly/dragonfly/world.blocksByName
+//go:linkname world_blocksByName github.com/sunproxy/sunfly/dragonfly/world.blocksByName
 //noinspection ALL
 var world_blocksByName = map[string]world.Block{}
 
-//go:linkname world_breakParticle github.com/df-mc/dragonfly/dragonfly/world.breakParticle
+//go:linkname world_breakParticle github.com/sunproxy/sunfly/dragonfly/world.breakParticle
 //noinspection ALL
 var world_breakParticle func(b world.Block) world.Particle
 
-//go:linkname World_registeredStates github.com/df-mc/dragonfly/dragonfly/world.registeredStates
+//go:linkname World_registeredStates github.com/sunproxy/sunfly/dragonfly/world.registeredStates
 //noinspection ALL
 var World_registeredStates []world.Block
 
-//go:linkname World_runtimeID github.com/df-mc/dragonfly/dragonfly/world.runtimeID
+//go:linkname World_runtimeID github.com/sunproxy/sunfly/dragonfly/world.runtimeID
 //noinspection ALL
 func World_runtimeID(w *world.World, pos world.BlockPos) uint32
 

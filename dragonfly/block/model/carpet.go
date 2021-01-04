@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Carpet is a model for carpet-like extremely thin blocks.

@@ -1,7 +1,7 @@
 package effect
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"image/color"
 	"time"
 )

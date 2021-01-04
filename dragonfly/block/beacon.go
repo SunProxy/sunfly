@@ -1,12 +1,12 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/effect"
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/internal/block_internal"
-	"github.com/df-mc/dragonfly/dragonfly/internal/world_internal"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/entity/effect"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/internal/block_internal"
+	"github.com/sunproxy/sunfly/dragonfly/internal/world_internal"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
 	"math"
 	"time"
@@ -222,14 +222,14 @@ func (Beacon) EncodeItem() (id int32, meta int16) {
 	return 138, 0
 }
 
-//go:linkname effect_effectByID github.com/df-mc/dragonfly/dragonfly/entity/effect.effectByID
+//go:linkname effect_effectByID github.com/sunproxy/sunfly/dragonfly/entity/effect.effectByID
 //noinspection ALL
 func effect_effectByID(id int) (effect.Effect, bool)
 
-//go:linkname effect_idByEffect github.com/df-mc/dragonfly/dragonfly/entity/effect.idByEffect
+//go:linkname effect_idByEffect github.com/sunproxy/sunfly/dragonfly/entity/effect.idByEffect
 //noinspection ALL
 func effect_idByEffect(e effect.Effect) (int, bool)
 
-//go:linkname world_highestLightBlocker github.com/df-mc/dragonfly/dragonfly/world.highestLightBlocker
+//go:linkname world_highestLightBlocker github.com/sunproxy/sunfly/dragonfly/world.highestLightBlocker
 //noinspection ALL
 func world_highestLightBlocker(w *world.World, x, z int) uint8

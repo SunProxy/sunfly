@@ -1,7 +1,7 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 )
 
 // Shroomlight are light-emitting blocks that generate in huge fungi.

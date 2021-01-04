@@ -1,9 +1,9 @@
 package block_internal
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity"
-	"github.com/df-mc/dragonfly/dragonfly/entity/damage"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/entity"
+	"github.com/sunproxy/sunfly/dragonfly/entity/damage"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // FireDamage deals fire damage to the entity.

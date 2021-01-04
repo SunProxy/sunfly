@@ -1,13 +1,13 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/model"
-	"github.com/df-mc/dragonfly/dragonfly/block/wood"
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/model"
+	"github.com/sunproxy/sunfly/dragonfly/block/wood"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // WoodSlab is a half block that allows entities to walk up blocks without jumping.

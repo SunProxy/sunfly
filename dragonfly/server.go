@@ -4,15 +4,6 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	_ "github.com/df-mc/dragonfly/dragonfly/block"
-	"github.com/df-mc/dragonfly/dragonfly/cmd"
-	_ "github.com/df-mc/dragonfly/dragonfly/item" // Imported for compiler directives.
-	"github.com/df-mc/dragonfly/dragonfly/player"
-	"github.com/df-mc/dragonfly/dragonfly/player/skin"
-	"github.com/df-mc/dragonfly/dragonfly/session"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/generator"
-	"github.com/df-mc/dragonfly/dragonfly/world/mcdb"
 	"github.com/go-gl/mathgl/mgl32"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/google/uuid"
@@ -22,6 +13,15 @@ import (
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
 	"github.com/sandertv/gophertunnel/minecraft/text"
 	"github.com/sirupsen/logrus"
+	_ "github.com/sunproxy/sunfly/dragonfly/block"
+	"github.com/sunproxy/sunfly/dragonfly/cmd"
+	_ "github.com/sunproxy/sunfly/dragonfly/item" // Imported for compiler directives.
+	"github.com/sunproxy/sunfly/dragonfly/player"
+	"github.com/sunproxy/sunfly/dragonfly/player/skin"
+	"github.com/sunproxy/sunfly/dragonfly/session"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/generator"
+	"github.com/sunproxy/sunfly/dragonfly/world/mcdb"
 	"go.uber.org/atomic"
 	"os"
 	"os/signal"
@@ -454,18 +454,18 @@ func (server *Server) itemEntries() (entries []protocol.ItemEntry) {
 	return
 }
 
-//go:linkname item_registerVanillaCreativeItems github.com/df-mc/dragonfly/dragonfly/item.registerVanillaCreativeItems
+//go:linkname item_registerVanillaCreativeItems github.com/sunproxy/sunfly/dragonfly/item.registerVanillaCreativeItems
 //noinspection ALL
 func item_registerVanillaCreativeItems()
 
-//go:linkname world_loadItemEntries github.com/df-mc/dragonfly/dragonfly/world.loadItemEntries
+//go:linkname world_loadItemEntries github.com/sunproxy/sunfly/dragonfly/world.loadItemEntries
 //noinspection all
 func world_loadItemEntries() error
 
-//go:linkname world_runtimeById github.com/df-mc/dragonfly/dragonfly/world.runtimeById
+//go:linkname world_runtimeById github.com/sunproxy/sunfly/dragonfly/world.runtimeById
 //noinspection ALL
 func world_runtimeById(id int32, meta int16) int32
 
-//go:linkname world_itemNames github.com/df-mc/dragonfly/dragonfly/world.itemNames
+//go:linkname world_itemNames github.com/sunproxy/sunfly/dragonfly/world.itemNames
 //noinspection all
 func world_itemNames() map[int32]string

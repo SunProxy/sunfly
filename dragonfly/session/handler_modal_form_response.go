@@ -3,8 +3,8 @@ package session
 import (
 	"bytes"
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/player/form"
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
+	"github.com/sunproxy/sunfly/dragonfly/player/form"
 	"go.uber.org/atomic"
 	"sync"
 )

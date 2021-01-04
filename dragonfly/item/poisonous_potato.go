@@ -1,8 +1,8 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/effect"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/entity/effect"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"math/rand"
 	"time"
 )

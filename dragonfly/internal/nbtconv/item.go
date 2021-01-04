@@ -3,29 +3,29 @@ package nbtconv
 import (
 	"bytes"
 	"encoding/gob"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/inventory"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/inventory"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	_ "unsafe" // Imported for compiler directives.
 )
 
-//go:linkname world_itemByName github.com/df-mc/dragonfly/dragonfly/world.itemByName
+//go:linkname world_itemByName github.com/sunproxy/sunfly/dragonfly/world.itemByName
 //noinspection ALL
 func world_itemByName(name string, meta int16) (world.Item, bool)
 
-//go:linkname world_itemToName github.com/df-mc/dragonfly/dragonfly/world.itemToName
+//go:linkname world_itemToName github.com/sunproxy/sunfly/dragonfly/world.itemToName
 //noinspection ALL
 func world_itemToName(it world.Item) (name string, meta int16)
 
-//go:linkname item_enchantmentByID github.com/df-mc/dragonfly/dragonfly/item.enchantmentByID
+//go:linkname item_enchantmentByID github.com/sunproxy/sunfly/dragonfly/item.enchantmentByID
 //noinspection ALL
 func item_enchantmentByID(id int) (item.Enchantment, bool)
 
-//go:linkname item_idByEnchantment github.com/df-mc/dragonfly/dragonfly/item.idByEnchantment
+//go:linkname item_idByEnchantment github.com/sunproxy/sunfly/dragonfly/item.idByEnchantment
 //noinspection ALL
 func item_idByEnchantment(ench item.Enchantment) (int, bool)
 
-//go:linkname item_values github.com/df-mc/dragonfly/dragonfly/item.values
+//go:linkname item_values github.com/sunproxy/sunfly/dragonfly/item.values
 //noinspection ALL
 func item_values(s item.Stack) map[string]interface{}
 

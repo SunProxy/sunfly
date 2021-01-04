@@ -1,9 +1,9 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"math"
 	"time"
 )

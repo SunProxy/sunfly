@@ -1,9 +1,9 @@
 package world
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world/chunk"
-	"github.com/df-mc/dragonfly/dragonfly/world/difficulty"
-	"github.com/df-mc/dragonfly/dragonfly/world/gamemode"
+	"github.com/sunproxy/sunfly/dragonfly/world/chunk"
+	"github.com/sunproxy/sunfly/dragonfly/world/difficulty"
+	"github.com/sunproxy/sunfly/dragonfly/world/gamemode"
 	"io"
 )
 

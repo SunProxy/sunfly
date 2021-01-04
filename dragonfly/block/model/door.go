@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Door is a model used for doors. It has no solid faces and a bounding box that changes depending on

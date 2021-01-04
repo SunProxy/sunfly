@@ -1,12 +1,12 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/model"
-	"github.com/df-mc/dragonfly/dragonfly/block/wood"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/model"
+	"github.com/sunproxy/sunfly/dragonfly/block/wood"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 )
 
 // WoodFenceGate is a block that can be used as an openable 1x1 barrier.

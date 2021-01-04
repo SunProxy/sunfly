@@ -1,8 +1,8 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
 )
 
 // CryingObsidian is a luminous variant of obsidian that can be used to craft a respawn anchor and produces purple particles when placed.

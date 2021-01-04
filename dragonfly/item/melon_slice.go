@@ -1,7 +1,7 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"time"
 )
 

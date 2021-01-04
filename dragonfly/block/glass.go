@@ -1,7 +1,7 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
 )
 
 // Glass is a decorative, fully transparent solid block that can be dyed into stained glass.

@@ -1,9 +1,9 @@
 package particle
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/instrument"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/instrument"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // BlockBreak is a particle sent when a block is broken. It represents a bunch of particles that are textured

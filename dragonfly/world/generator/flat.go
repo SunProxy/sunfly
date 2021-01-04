@@ -1,9 +1,9 @@
 package generator
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/chunk"
+	"github.com/sunproxy/sunfly/dragonfly/block"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/chunk"
 )
 
 // Flat is the flat generator of World. It generates flat worlds (like those in vanilla) with no other

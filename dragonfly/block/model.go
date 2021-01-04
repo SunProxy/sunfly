@@ -1,8 +1,8 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/model"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/block/model"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // solid represents a block that is fully solid. It always returns a model.Solid when Model is called.

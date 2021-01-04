@@ -1,8 +1,8 @@
 package entity
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"math"
 )
 

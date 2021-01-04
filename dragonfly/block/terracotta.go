@@ -1,7 +1,7 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 )
 
 // Terracotta is a block formed from clay, with a hardness and blast resistance comparable to stone. For colouring it,

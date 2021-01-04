@@ -1,10 +1,10 @@
 package entity
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/damage"
-	"github.com/df-mc/dragonfly/dragonfly/entity/healing"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/entity/damage"
+	"github.com/sunproxy/sunfly/dragonfly/entity/healing"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Living represents an entity that is alive and that has health. It is able to take damage and will die upon

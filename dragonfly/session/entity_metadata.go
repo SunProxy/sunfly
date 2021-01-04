@@ -1,7 +1,7 @@
 package session
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // entityMetadata represents a map that holds metadata associated with an entity. The data held in the map

@@ -1,8 +1,8 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/wood"
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/block/wood"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 )
 
 // Planks are common blocks used in crafting recipes. They are made by crafting logs into planks.

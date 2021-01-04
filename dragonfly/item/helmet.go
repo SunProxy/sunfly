@@ -1,8 +1,8 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item/armour"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item/armour"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Helmet is a defensive item that may be worn in the head slot. It comes in several tiers, each with

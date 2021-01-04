@@ -1,10 +1,10 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity"
-	"github.com/df-mc/dragonfly/dragonfly/event"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
+	"github.com/sunproxy/sunfly/dragonfly/entity"
+	"github.com/sunproxy/sunfly/dragonfly/event"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 	"time"
 )
 

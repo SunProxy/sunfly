@@ -1,9 +1,9 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/colour"
-	"github.com/df-mc/dragonfly/dragonfly/block/instrument"
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/block/colour"
+	"github.com/sunproxy/sunfly/dragonfly/block/instrument"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 )
 
 // Wool is a colourful block that can be obtained by killing/shearing sheep, or crafted using four string.

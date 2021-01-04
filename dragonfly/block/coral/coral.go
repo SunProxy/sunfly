@@ -2,7 +2,7 @@ package coral
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/block/colour"
+	"github.com/sunproxy/sunfly/dragonfly/block/colour"
 )
 
 // Coral represents a type of coral of a block. Coral, coral fans, and coral blocks carry one of these types.

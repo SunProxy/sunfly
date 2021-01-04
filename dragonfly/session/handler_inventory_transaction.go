@@ -2,10 +2,10 @@ package session
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/block"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/sandertv/gophertunnel/minecraft/protocol"
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
+	"github.com/sunproxy/sunfly/dragonfly/block"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"time"
 )
 

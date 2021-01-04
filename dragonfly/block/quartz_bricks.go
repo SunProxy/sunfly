@@ -1,6 +1,6 @@
 package block
 
-import "github.com/df-mc/dragonfly/dragonfly/item"
+import "github.com/sunproxy/sunfly/dragonfly/item"
 
 // QuartzBricks is a mineral block used only for decoration.
 type QuartzBricks struct {

@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/physics"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Leaves is a model for leaves-like blocks. These blocks have a full collision box, but none of their faces

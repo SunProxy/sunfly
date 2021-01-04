@@ -3,7 +3,7 @@ package inventory
 import (
 	"errors"
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item"
 	"go.uber.org/atomic"
 	"math"
 	"strings"

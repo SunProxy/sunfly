@@ -1,11 +1,11 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item/armour"
-	"github.com/df-mc/dragonfly/dragonfly/item/bucket"
-	"github.com/df-mc/dragonfly/dragonfly/item/potion"
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item/armour"
+	"github.com/sunproxy/sunfly/dragonfly/item/bucket"
+	"github.com/sunproxy/sunfly/dragonfly/item/potion"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 //noinspection SpellCheckingInspection

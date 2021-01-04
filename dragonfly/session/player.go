@@ -3,20 +3,20 @@ package session
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/block"
-	"github.com/df-mc/dragonfly/dragonfly/entity/effect"
-	"github.com/df-mc/dragonfly/dragonfly/internal/entity_internal"
-	"github.com/df-mc/dragonfly/dragonfly/internal/nbtconv"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/inventory"
-	"github.com/df-mc/dragonfly/dragonfly/player/form"
-	"github.com/df-mc/dragonfly/dragonfly/player/skin"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/gamemode"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/google/uuid"
 	"github.com/sandertv/gophertunnel/minecraft/protocol"
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
+	"github.com/sunproxy/sunfly/dragonfly/block"
+	"github.com/sunproxy/sunfly/dragonfly/entity/effect"
+	"github.com/sunproxy/sunfly/dragonfly/internal/entity_internal"
+	"github.com/sunproxy/sunfly/dragonfly/internal/nbtconv"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/inventory"
+	"github.com/sunproxy/sunfly/dragonfly/player/form"
+	"github.com/sunproxy/sunfly/dragonfly/player/skin"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/gamemode"
 	"go.uber.org/atomic"
 	"math"
 	"net"
@@ -590,26 +590,26 @@ const (
 // The following functions use the go:linkname directive in order to make sure the item.byID and item.toID
 // functions do not need to be exported.
 
-//go:linkname world_itemByID github.com/df-mc/dragonfly/dragonfly/world.itemByID
+//go:linkname world_itemByID github.com/sunproxy/sunfly/dragonfly/world.itemByID
 //noinspection ALL
 func world_itemByID(id int32, meta int16) (world.Item, bool)
 
-//go:linkname world_runtimeById github.com/df-mc/dragonfly/dragonfly/world.runtimeById
+//go:linkname world_runtimeById github.com/sunproxy/sunfly/dragonfly/world.runtimeById
 //noinspection ALL
 func world_runtimeById(id int32, meta int16) int32
 
-//go:linkname world_idByRuntime github.com/df-mc/dragonfly/dragonfly/world.idByRuntime
+//go:linkname world_idByRuntime github.com/sunproxy/sunfly/dragonfly/world.idByRuntime
 //noinspection ALL
 func world_idByRuntime(id int32, meta int16) world.ItemEntry
 
-//go:linkname item_id github.com/df-mc/dragonfly/dragonfly/item.id
+//go:linkname item_id github.com/sunproxy/sunfly/dragonfly/item.id
 //noinspection ALL
 func item_id(s item.Stack) int32
 
-//go:linkname effect_idByEffect github.com/df-mc/dragonfly/dragonfly/entity/effect.idByEffect
+//go:linkname effect_idByEffect github.com/sunproxy/sunfly/dragonfly/entity/effect.idByEffect
 //noinspection ALL
 func effect_idByEffect(effect.Effect) (int, bool)
 
-//go:linkname effect_byID github.com/df-mc/dragonfly/dragonfly/entity/effect.effectByID
+//go:linkname effect_byID github.com/sunproxy/sunfly/dragonfly/entity/effect.effectByID
 //noinspection ALL
 func effect_byID(int) (effect.Effect, bool)

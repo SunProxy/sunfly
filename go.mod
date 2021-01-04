@@ -1,9 +1,9 @@
-module github.com/df-mc/dragonfly
+module github.com/sunproxy/sunfly
 
 go 1.13
 
 require (
-	github.com/aquilax/go-perlin v1.0.0
+	github.com/aquilax/go-perlin v1.0.0 // indirect
 	github.com/cespare/xxhash v1.1.0
 	github.com/df-mc/goleveldb v1.1.8
 	github.com/go-gl/mathgl v1.0.0

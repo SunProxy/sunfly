@@ -1,8 +1,8 @@
 package item
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/item/armour"
-	"github.com/df-mc/dragonfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/item/armour"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // Boots are a defensive item that may be equipped in the boots armour slot. They come in several tiers, like

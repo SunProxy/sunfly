@@ -1,8 +1,8 @@
 package world
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world/chunk"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/world/chunk"
 	"math"
 	"sync"
 )

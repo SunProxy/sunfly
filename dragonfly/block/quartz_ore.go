@@ -1,6 +1,6 @@
 package block
 
-import "github.com/df-mc/dragonfly/dragonfly/item"
+import "github.com/sunproxy/sunfly/dragonfly/item"
 
 // NetherQuartzOre is ore found in the Nether.
 type NetherQuartzOre struct {

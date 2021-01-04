@@ -1,12 +1,12 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/instrument"
-	"github.com/df-mc/dragonfly/dragonfly/entity"
-	"github.com/df-mc/dragonfly/dragonfly/entity/effect"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
+	"github.com/sunproxy/sunfly/dragonfly/block/instrument"
+	"github.com/sunproxy/sunfly/dragonfly/entity"
+	"github.com/sunproxy/sunfly/dragonfly/entity/effect"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 )
 
 // Activatable represents a block that may be activated by a viewer of the world. When activated, the block

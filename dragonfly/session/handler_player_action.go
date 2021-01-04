@@ -2,9 +2,9 @@ package session
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // PlayerActionHandler handles the PlayerAction packet.

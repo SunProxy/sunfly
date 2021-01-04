@@ -1,6 +1,6 @@
 package tool
 
-import "github.com/df-mc/dragonfly/dragonfly/world"
+import "github.com/sunproxy/sunfly/dragonfly/world"
 
 // Tool represents an item that may be used as a tool.
 type Tool interface {

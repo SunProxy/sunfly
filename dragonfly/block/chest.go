@@ -2,13 +2,13 @@ package block
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/block/action"
-	"github.com/df-mc/dragonfly/dragonfly/internal/nbtconv"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/inventory"
-	"github.com/df-mc/dragonfly/dragonfly/world"
-	"github.com/df-mc/dragonfly/dragonfly/world/sound"
 	"github.com/go-gl/mathgl/mgl64"
+	"github.com/sunproxy/sunfly/dragonfly/block/action"
+	"github.com/sunproxy/sunfly/dragonfly/internal/nbtconv"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/inventory"
+	"github.com/sunproxy/sunfly/dragonfly/world"
+	"github.com/sunproxy/sunfly/dragonfly/world/sound"
 	"strings"
 	"sync"
 )

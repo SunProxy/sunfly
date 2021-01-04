@@ -1,11 +1,11 @@
 package session
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/go-gl/mathgl/mgl32"
 	"github.com/go-gl/mathgl/mgl64"
 	"github.com/sandertv/gophertunnel/minecraft/protocol"
 	"github.com/sandertv/gophertunnel/minecraft/protocol/packet"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 )
 
 // PlayerAuthInputHandler handles the PlayerAuthInput packet.

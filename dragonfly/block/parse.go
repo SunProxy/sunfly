@@ -4,9 +4,9 @@ package block
 
 import (
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/internal/block_internal"
-	"github.com/df-mc/dragonfly/dragonfly/world"
 	"github.com/sahilm/fuzzy"
+	"github.com/sunproxy/sunfly/dragonfly/internal/block_internal"
+	"github.com/sunproxy/sunfly/dragonfly/world"
 	"go/ast"
 	"reflect"
 	"strconv"

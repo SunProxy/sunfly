@@ -1,9 +1,9 @@
 package block
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/block/instrument"
-	"github.com/df-mc/dragonfly/dragonfly/item"
-	"github.com/df-mc/dragonfly/dragonfly/item/tool"
+	"github.com/sunproxy/sunfly/dragonfly/block/instrument"
+	"github.com/sunproxy/sunfly/dragonfly/item"
+	"github.com/sunproxy/sunfly/dragonfly/item/tool"
 )
 
 // IronBlock is a precious metal block made from 9 iron ingots.

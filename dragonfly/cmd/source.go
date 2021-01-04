@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/df-mc/dragonfly/dragonfly/world"
+import "github.com/sunproxy/sunfly/dragonfly/world"
 
 // Source represents a source of a command execution. Commands may limit the sources that can run them by
 // implementing the Limiter interface.

@@ -3,7 +3,7 @@ package world
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/df-mc/dragonfly/dragonfly/internal/resource"
+	"github.com/sunproxy/sunfly/dragonfly/internal/resource"
 )
 
 // Item represents an item that may be added to an inventory. It has a method to encode the item to an ID and

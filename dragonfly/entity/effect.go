@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"github.com/df-mc/dragonfly/dragonfly/entity/effect"
+	"github.com/sunproxy/sunfly/dragonfly/entity/effect"
 	"reflect"
 	"sync"
 	"time"
