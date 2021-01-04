@@ -123,8 +123,8 @@ func (it *Item) checkNearby() {
 
 // merge merges the item entity with another item entity.
 func (it *Item) merge(other *Item) bool {
-	if other.i.Count() == other.i.MaxCount() || it.i.Count() == it.i.MaxCount() {
-		// Either stack is already filled up to the maximum, meaning we can't change anything any way.
+	if other.i.Count() == other.i.MaxCount() || it.i.Count() == it.i.MaxCount() || it.NameTag() != other.NameTag() {
+		// Either stack is already filled up to the maximum, meaning we can't change anything any way or the names don't match.
 		return false
 	}
 	if !it.i.Comparable(other.i) {
@@ -139,6 +139,9 @@ func (it *Item) merge(other *Item) bool {
 
 	if !b.Empty() {
 		newB := NewItem(b, it.Position())
+		if it.nameTag.Load().(string) != "" {
+			newB.SetNameTag(it.nameTag.Load().(string))
+		}
 		newB.SetVelocity(it.Velocity())
 		it.World().AddEntity(newB)
 	}
