@@ -145,6 +145,7 @@ func (it *Item) merge(other *Item) bool {
 	}
 	newA.SetVelocity(other.Velocity())
 	ctx := event.C()
+	it.Handler().HandleItemMerge(ctx, it, newA)
 	ctx.Continue(func() {
 		it.World().AddEntity(newA)
 	})
@@ -155,6 +156,8 @@ func (it *Item) merge(other *Item) bool {
 			newB.SetNameTag(it.nameTag.Load().(string))
 		}
 		newB.SetVelocity(it.Velocity())
+		ctx := event.C()
+		it.Handler().HandleItemMerge(ctx, it, newB)
 		ctx.Continue(func() {
 			it.World().AddEntity(newB)
 		})
