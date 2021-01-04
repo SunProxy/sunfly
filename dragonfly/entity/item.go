@@ -6,6 +6,7 @@ import (
 	"github.com/sunproxy/sunfly/dragonfly/entity/action"
 	"github.com/sunproxy/sunfly/dragonfly/entity/physics"
 	"github.com/sunproxy/sunfly/dragonfly/entity/state"
+	"github.com/sunproxy/sunfly/dragonfly/event"
 	"github.com/sunproxy/sunfly/dragonfly/internal/nbtconv"
 	"github.com/sunproxy/sunfly/dragonfly/item"
 	"github.com/sunproxy/sunfly/dragonfly/world"
@@ -138,7 +139,11 @@ func (it *Item) merge(other *Item) bool {
 		newA.SetNameTag(it.nameTag.Load().(string))
 	}
 	newA.SetVelocity(other.Velocity())
-	it.World().AddEntity(newA)
+	ctx := event.C()
+	it.World().Handler().HandleItemMerge(ctx, it, newA)
+	ctx.Continue(func() {
+		it.World().AddEntity(newA)
+	})
 
 	if !b.Empty() {
 		newB := NewItem(b, it.Position())
@@ -146,7 +151,10 @@ func (it *Item) merge(other *Item) bool {
 			newB.SetNameTag(it.nameTag.Load().(string))
 		}
 		newB.SetVelocity(it.Velocity())
-		it.World().AddEntity(newB)
+		it.World().Handler().HandleItemMerge(ctx, it, newB)
+		ctx.Continue(func() {
+			it.World().AddEntity(newB)
+		})
 	}
 	_ = it.Close()
 	_ = other.Close()
