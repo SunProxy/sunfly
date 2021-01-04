@@ -20,7 +20,7 @@ func defaultEntityMetadata(e world.Entity) entityMetadata {
 	m[dataKeyPotionColour] = int32(0)
 	m[dataKeyPotionAmbient] = byte(0)
 	m[dataKeyColour] = byte(0)
-
+	m[dataKeyAlwaysShowNameTag] = byte(1)
 	return m
 }
 
@@ -49,6 +49,7 @@ const (
 	dataKeyScale             = 38
 	dataKeyBoundingBoxWidth  = 53
 	dataKeyBoundingBoxHeight = 54
+	dataKeyAlwaysShowNameTag = 80
 )
 
 //noinspection GoUnusedConst
@@ -59,6 +60,7 @@ const (
 	dataFlagSprinting
 	dataFlagUsingItem
 	dataFlagInvisible
+	dataFlagAlwaysShowNameTag = 15
 	dataFlagNoAI              = 16
 	dataFlagBreathing         = 35
 	dataFlagAffectedByGravity = 48

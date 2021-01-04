@@ -42,7 +42,7 @@ func NewItem(i item.Stack, pos mgl64.Vec3) *Item {
 	it.SetPickupDelay(time.Second / 2)
 	it.pos.Store(pos)
 	it.velocity.Store(mgl64.Vec3{})
-
+	it.nameTag.Store("")
 	return it
 }
 
