@@ -11,6 +11,7 @@ import (
 	"github.com/sunproxy/sunfly/dragonfly/item"
 	"github.com/sunproxy/sunfly/dragonfly/world"
 	"math"
+	"sync"
 	"sync/atomic"
 	"time"
 )
@@ -23,6 +24,10 @@ type Item struct {
 	velocity, pos    atomic.Value
 
 	nameTag atomic.Value
+
+	handler Handler
+
+	handlerMu sync.RWMutex
 
 	*MovementComputer
 }
@@ -140,7 +145,6 @@ func (it *Item) merge(other *Item) bool {
 	}
 	newA.SetVelocity(other.Velocity())
 	ctx := event.C()
-	it.World().Handler().HandleItemMerge(ctx, it, newA)
 	ctx.Continue(func() {
 		it.World().AddEntity(newA)
 	})
@@ -151,7 +155,6 @@ func (it *Item) merge(other *Item) bool {
 			newB.SetNameTag(it.nameTag.Load().(string))
 		}
 		newB.SetVelocity(it.Velocity())
-		it.World().Handler().HandleItemMerge(ctx, it, newB)
 		ctx.Continue(func() {
 			it.World().AddEntity(newB)
 		})
@@ -242,4 +245,26 @@ func (it *Item) State() (s []state.State) {
 		s = append(s, state.Named{NameTag: it.nameTag.Load().(string)})
 	}
 	return
+}
+
+func (it *Item) Handle(h Handler) {
+	if it == nil {
+		return
+	}
+	it.handlerMu.RLock()
+	defer it.handlerMu.RUnlock()
+	if h == nil {
+		h = NopHandler{}
+	}
+	it.handler = h
+}
+
+//Handler Returns the current Handler of this item entity
+func (it *Item) Handler() Handler {
+	if it.handler == nil {
+		return NopHandler{}
+	}
+	it.handlerMu.RLock()
+	defer it.handlerMu.RUnlock()
+	return it.handler
 }

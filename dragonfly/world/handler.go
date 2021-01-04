@@ -1,7 +1,6 @@
 package world
 
 import (
-	"github.com/sunproxy/sunfly/dragonfly/entity"
 	"github.com/sunproxy/sunfly/dragonfly/event"
 )
 
@@ -15,9 +14,6 @@ type Handler interface {
 	// liquidHardened, and the liquid that caused it to harden, otherLiquid, are passed. The block created
 	// as a result is also passed.
 	HandleLiquidHarden(ctx *event.Context, hardenedPos BlockPos, liquidHardened, otherLiquid, newBlock Block)
-	//HandleItemMerge handles the merging of items in the said world
-	//Used to change names on merges and other things you please.
-	HandleItemMerge(ctx *event.Context, old, new *entity.Item)
 }
 
 // NopHandler implements the Handler interface but does not execute any code when an event is called. The
@@ -33,5 +29,3 @@ func (NopHandler) HandleLiquidFlow(*event.Context, BlockPos, BlockPos, Block, Bl
 
 // HandleLiquidHarden ...
 func (NopHandler) HandleLiquidHarden(*event.Context, BlockPos, Block, Block, Block) {}
-
-func (NopHandler) HandleItemMerge(*event.Context, *entity.Item, *entity.Item) {}
