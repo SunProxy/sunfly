@@ -134,6 +134,9 @@ func (it *Item) merge(other *Item) bool {
 	a, b := other.i.AddStack(it.i)
 
 	newA := NewItem(a, other.Position())
+	if it.nameTag.Load().(string) != "" {
+		newA.SetNameTag(it.nameTag.Load().(string))
+	}
 	newA.SetVelocity(other.Velocity())
 	it.World().AddEntity(newA)
 
